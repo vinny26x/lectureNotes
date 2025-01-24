@@ -1,14 +1,12 @@
 HW 0 - due today
 
 HW 1 - due Tuesday, January 28
-    be sure to explain your reasoning when asked
-    on logic puzzles, should be clear why your answer is the only  
-        one
-
-Collaboration policy - can work together
 
 
-AI policy - no
+Collaboration policy
+
+
+AI policy
 
 
 
@@ -45,46 +43,55 @@ else {
     statements3;
 }
 
-x < 3 || y > 4 would be false when:
-    x >=3 and y <= 4
+--> is it possible for "statements2" to execute?
 
---> is it possible for "statements2" to execute? NO,
-    because y would be <= 4 and can't also be equal to 7
 
+--> what if "y==7" becomes "y > 2"?
 
 
 
 ////////////////////////////////////////////////////////
 
 More with knights and knaves.
-
-knights: each full statement that they make is true
-knave: each full statement must be false
+knights: each full statement that they make is rue
+knave: each full statement must be false  
+//key word whole
 
 
 
 You see two different inhabitants, Ava and Bob.
 
+
 Ava says that Bob is a knave.
 Bob says, "Neither Ava nor I are knaves."
+
+    "Ava is a knight and I am a knight"
 
 
 
 What does "neither" mean?
-    Bob: Ava and I are both knights
+
+
+Rewrite both statements.
+Bob: Ava and I are both knights
+
 
 
 What are Ava and Bob?
-    Suppose Ava is a knight. Then from her statement,
-    Bob must be a knave. This works, since Bob's statement
-        would be a lie (he isn't a knight).
+//pick one and check through
+Suppose Ava is a knight
+//bob would be a knave
+//now check bob
+//bob says that they are both not knaves 
+//that works
 
-    Suppose instead Ava is a knave. Then from her statement,
-        Bob would be a knight. Bob's statement wouldn't be
-        true since Ava is a knave, so this doesn't work.
+Suppose Ava is a knave
+//bob has to be a knight
+//they cannot both be knights because they would both have to be knights
+
+//solution: ava is a knight, bob is a knave
 
 
-Solution: Ava is a knight, Bob is a knave
 
 
 
@@ -106,21 +113,30 @@ What types are Sarah, Bill, and Mae?
 
 
 (How might we simplify everything?)
+//rewrite to understand
+sarah: bill is a knight
+bill: mae is a knight
 
-Sarah: Bill is a knight
-Bill: Mae is a knight
 
-Suppose that Sarah is a knight. From her statement, Bill must
-    be a knight, and from his statement, Mae is must also be a knight.
-    Bill would not say Mae is a knave, so this doesn't work.
+solution
+suppose sarah is a knight
+bill is a knight
+mae must also be a knight
+this does not work because mae's statement would not work
 
-Suppose instead that Sarah is a knave. From her statement, Bill
-    must be a knave, and from his statement, Mae must be a knave.
-    Bill would say Mae is a knight (lying), but Mae would lie
-    and say Bill would say she was a knave. This works.
+suppose sarah is a knave
+bill is a knave
+mae would be a knave
+if mae says bill will say she is a knave that is a lie
+because if bill was a knave then he would say that mae is a knight
+solution:
+they are all knaves
 
-Solution: all 3 are knaves
-    
+
+
+
+
+
 
 
 ////////////////////////////////////
@@ -132,25 +148,18 @@ Unicorn always lies on Thursdays, Fridays, and Saturdays,
 
 On Sunday, everyone tells the truth.
 
+
 Lion says: "Yesterday was one of my lying days."
 Unicorn says: "Yesterday was one of my lying days, too."
 
 What day is it?
+sunday: lion is lying so this doesnt work
 
-Sunday: doesn't work, Lion should tell the truth and Sat.
-    wasn't a lying day for him.
+tuesday: doesn't work lion should be lying but he is telling the truth
 
-Tuesday: doesn't work for Lion. Mon. was one of his lying days,
-    but he should be lying about it. Similarly, Wed/Fri/Sat
-    also don't work.
+thursday: he would be telling the truth about Wednesday and Unicorn would be lying because it is Thursday and Wednesday would be a truth day
 
-Monday: works for Lion, but Unicorn should tell the truth
-    on Monday and Sunday wasn't one of his lying days.
-
-Thursday: works. Yesterday was one of Lion's lying days 
-    (and Lion is correctly telling the truth). Yesterday
-    was not one of Unicorn's lying days (and Unicorn is correctly
-    lying about that).
+so thursday is the answer
 
 
 
@@ -168,16 +177,12 @@ and that the other lies Thurs/Fri/Sat.
 You don't know which is which.
 
 You see both of them together.
-The first one says: "I'm Tweedledum." 
+The first one says: "I'm Tweedledum."
 The second one says: "I'm Tweedledee."
 
 Which is which? What day is it?
-
-On every day but Sunday, one would lie and one would tell the
-truth. They would give the SAME NAME on those days.
-
-It must be Sunday. They are who they say.
-
+on every day but Sunday, one would be lying and one would be telling the truth, they would have to give the same name
+therefore, the only possible answer is Sunday
 
 
 
@@ -206,22 +211,20 @@ The first one says: "Tweedledee owns the rattle."
 The second one says: "I'm Tweedledee!"
 
 Who gets the rattle?
+suppose first one is telling truth
+//then tweedledee does own the rattle, the second must be tweedledum which means the first twin is weedledee
+the first twin owns the rattle
 
-Suppose first twin is telling the truth and the second twin is
-lying. Then Tweedledee really does own the rattle. The second twin
-must be Tweedledum, which means that the first twin is Tweedledee.
-The first twin owns the rattle.
+suppose the first twin is lying and second twin is telling the truth
+//tweedledum owns the rattle
+//and the second twin is tweedledee 
+//so the first twin gets the rattle
 
-Suppose instead the first twin is lying and the second twin is
-telling the truth. Then Tweedledum owns the rattle and the 
-second twin is Tweedledee. The first twin owns the rattle.
+so the first twin gets the rattle
 
-(we still don't know who is who)
 
 
 ///////////////////////////////////////////
-
-(skip - recommend practice)
 
 Based on Shakespeare's "Merchant of Venice".
 
@@ -266,24 +269,19 @@ Cheryl privately tells Bernard her birthday day (number).
 Albert says: "I don't know when Cheryl's birthday is,
     but I know Bernard doesn't know too."
 
+//what do we get from this?
+cant be may because it cannot be unique because 19
+it cannot be june because 18 is unique 
+cannot be 14 because benard would not know at this point
+
+
 Bernard says: "At first I didn't know when Cheryl's
     birthday is, but now I do."
 
+    (Bernard also knows it is not May or June)
 
 Albert says: "Then I also know when Cheryl's birthday is."
 
-
-Solution:
-
-Albert's first statement: can't be May/June, as those each have
-a unique day (and Albert would know there was a possibility
-that Bernard WOULD know).
-
-Bernard's statement: can't be July 14/August 14, as Bernard still
-wouldn't know answer.
-
-Albert's second statement: must be July 16, as August still has
-two remaining possibilities and Albert wouldn't be able to tell.
 
 
 ///////////////////////////////////
@@ -297,23 +295,23 @@ Variables can be true or false
 
 Basic operations:
 
-∧   and (&&)
-∨   or (inclusive or ||)
-¬   not (!)
-→   implies (if/then ->)
+∧   and &&
+∨   or (inclusive or) ||
+¬   not !
+→   implies (if then) ->
 
 
 Basic logic gates (draw on board)
 
 
+
 gates still used to design circuits
 
 
-why do we care about equivalent circuits? less room, cheaper
-    if one circuit is smaller
+why do we care about equivalent circuits?
 
 
-what about programming? more streamlined code
+what about programming?
 
 
 ///////////////////////////////////////////////////
@@ -327,7 +325,7 @@ p q  #  p ∧ q
 --------------
 T T  #    T
 T F  #    F
-F T  #    F 
+F T  #    F
 F F  #    F
 
 
@@ -335,18 +333,18 @@ OR:
 
 p q  #  p ∨ q
 --------------
-T T  #    T
-T F  #    T
-F T  #    T
-F F  #    F
+T T  #    
+T F  #    
+F T  #    
+F F  #    
 
 
 NOT:
 
 p  # ¬p
 --------
-T  # F
-F  # T
+T  # 
+F  # 
 
 ////////////////////////////////////////////////
 
@@ -364,16 +362,14 @@ Otherwise we have not.
 
 p q  #  p → q
 --------------
-T T  #    T
-T F  #    F  
-F T  #    T
-F F  #    T 
+T T  #    
+T F  #    
+F T  #    
+F F  #    
 
 /////////////////////////////////////////
 
 How does the implies operator relate to programming?
-
-if statement
 
 //////////////////////////////////////////
 
@@ -381,19 +377,16 @@ Design circuits for:
 
 ¬(p ∨ q)       (p NOR q)
 
+¬(p ∧ (q ∨ r))
 
 p XOR q (with just the gates we've seen, not a specific XOR gate)
-
-(this was done on the board during class)
 
 /////////////////////////////////////
 
 How would we evaluate the output of these circuits with
 different inputs?
 
-(this was done on the board during class)
 
-<--------stopped here, will continue next week
 
 
 Graphically build circuits:
